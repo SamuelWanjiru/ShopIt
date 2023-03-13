@@ -1,0 +1,84 @@
+.navbar {
+    height: 50px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    
+    .wrapper {
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .SearchProduct {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 3px;
+
+        .SearchButton{
+          height: 30px;
+          padding: 5px 5px;
+          border-radius: 5px;
+          border: 1px transparent;
+          color: white;
+          background-color: #ff9900;
+          cursor: pointer;
+        }
+  
+        input {
+          border: 1px solid rgb(170, 165, 165);
+          border-radius: 5px;
+          height: 20px;
+          padding: 5px 10px;
+  
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      .items {
+        display: flex;
+        align-items: center;
+  
+        .item {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          position: relative;
+  
+          .icon {
+            font-size: 20px;
+          }
+  
+          .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+  
+          .counter {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+          }
+        }
+      }
+    }
+  }
